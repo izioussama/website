@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Angelos';
+    src: url('/assets/fonts/angelos.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --font-accent: 'Clash Display', sans-serif;
+    --font-main: 'Satoshi', sans-serif;
+    --font-second: 'WDXL Lubrifont SC', sans-serif;
+    --font-third: 'Pacifico', sans-serif;
+    --cyan: #8c79cf;
+    --animation-duration: 1.2s;
+}
+
+body {
+    font-family: var(--font-main);
+    background: #000;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    cursor: url(./assets/images/2.png), pointer;
+}
+.crosshair {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 40px;
+      height: 40px;
+      pointer-events: none;
+      z-index: 9999;
+    }
+:root {
+    --font-main: 'Satoshi', sans-serif;
+    --cyan: #8c79cf;
+}
+
+/* Navbar Container */
+.glass-navbar {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    width: 75%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+    padding: 12px 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    transition: 
+        transform 1s cubic-bezier(0.34, 1.56, 0.64, 1),
+        opacity 0.8s ease-out;
+    opacity: 0;
+}
+
+/* Visible State */
+.glass-navbar.visible {
+    transform: translateX(-50%) translateY(20px);
+    opacity: 1;
+}
+
+/* Nav Layout */
+.glass-navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Nav Links */
+.glass-navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin: 0 15px;
+    transition: opacity 0.3s;
+    font-family: var(--font-main);
+}
+
+.glass-navbar a:hover {
+    opacity: 0.8;
+}
+
+/* Logo */
+.glass-navbar .logo {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+}
+
+/* CTA Button */
+.glass-navbar .nav-cta {
+    background: var(--cyan);
+    color: #0F0529;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-family: var(--font-main);
+}
+
+.glass-navbar .nav-cta:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .glass-navbar {
+        width: 90%;
+        padding: 10px 20px;
+    }
+    
+    .glass-navbar a {
+        margin: 5px 10px;
+        font-size: 0.85rem;
+    }
+    
+    .glass-navbar .nav-cta {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+    }
+}
