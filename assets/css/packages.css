@@ -1,0 +1,167 @@
+/* packages.css */
+.packages-section {
+      padding: 180px 0 50px;
+  background: rgba(0,0,0,0.7);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.section-subtitle {
+  color: #8c79cf;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeIn 0.8s 0.8s forwards;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 0.8s 1s forwards;
+}
+
+.section-description {
+  color: rgba(255,255,255,0.7);
+  font-size: 1.1rem;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  animation: fadeIn 0.8s 1.8s forwards;
+}
+
+.package-card.featured {
+  border: 1px solid var(--cyan);
+  box-shadow: 0 0 30px rgba(140,121,207,0.2);
+}
+
+/* Rest of your package styles remain the same */
+.package-badge {
+  position: absolute;
+top: 25px;
+    right: -50px;
+  background: var(--cyan);
+  color: #0F0529;
+  padding: 5px 30px;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 0.8rem;
+  width: 120px;
+  text-align: center;
+}
+
+.package-icon {
+  font-size: 2.5rem;
+  color: var(--cyan);
+  margin-bottom: 20px;
+}
+
+.package-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.package-price {
+  margin-bottom: 25px;
+}
+
+.package-price .amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  font-family: var(--font-accent);
+}
+
+.package-price .period {
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.package-features li {
+  margin-bottom: 12px;
+  color: rgba(255,255,255,0.8);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.package-features i {
+  color: var(--cyan);
+}
+
+.package-cta {
+  background: var(--cyan);
+  color: #0F0529;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.package-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(140,121,207,0.4);
+}
+
+/* Hover Effects */
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .package-card {
+    padding: 30px 20px;
+  }
+  
+  .package-price .amount {
+    font-size: 2rem;
+  }
+}
