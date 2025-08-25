@@ -13,21 +13,68 @@
 <link rel="stylesheet" href="./assets/css/header.css">
 </head>
 <body class="gradient-bg">
-    <!-- Floating Glass Navbar -->
-    <header class="glass-navbar animate-fade-in">
+<header class="glass-navbar">
         <nav>
             <div class="nav-left">
                 <a href="index.php">Home</a>
-                <a href="work.php">Our work</a>
-                <a href="services.php">Services</a>
+                <a href="work.php">Ons werk</a>
+                <a href="services.php">Diensten</a>
             </div>
             <div class="logo">
                 <img src="assets/images/logo.png" alt="Banking Logo" width="100">
             </div>
             <div class="nav-right">
-                <a href="#">About Us</a>
-                <a href="#">Packs</a>
-                <button class="nav-cta">Contact</button>
+                <a href="aboutus.php">Over ons</a>
+                <a href="packages.php">Pakketten</a>
+                <a href="contact.php"><button class="nav-cta">Contact</button></a>
             </div>
         </nav>
     </header>
+
+    <!-- Mobile Header (shown on mobile) -->
+    <div class="mobile-header">
+        <div class="mobile-logo">
+            <img src="assets/images/logo.png" alt="Logo">
+        </div>
+        <button class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="index.php">Home</a>
+        <a href="work.php">Ons werk</a>
+        <a href="services.php">Diensten</a>
+        <a href="aboutus.php">Over ons</a>
+        <a href="packages.php">Pakketten</a>
+        <a href="contact.php"><button class="mobile-cta">Contact</button></a>
+    </div>
+    <script>        document.addEventListener('DOMContentLoaded', () => {
+ 
+            // Mobile menu functionality
+            const hamburger = document.querySelector('.hamburger');
+            const mobileMenu = document.querySelector('.mobile-menu');
+
+            const toggleMenu = () => {
+                hamburger.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+                document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+            };
+
+            hamburger.addEventListener('click', toggleMenu);
+
+            // Close menu when clicking on links
+            document.querySelectorAll('.mobile-menu a').forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 768 && mobileMenu.classList.contains('active')) {
+                    toggleMenu();
+                }
+            });
+        });</script>
