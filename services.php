@@ -3,117 +3,117 @@
 <link rel="stylesheet" href="assets/css/footer.css">
 <link rel="stylesheet" href="assets/css/services.css">
 
+<section class="services-section" id="services-section">
+  <p class="section-subtitle scroll-animate">Onze Expertise</p>
+  <h2 class="section-title scroll-animate">Hoe kunnen wij uw bedrijf helpen?</h2>
+  <p class="section-description scroll-animate">
+    Wij combineren creativiteit en strategie om uitzonderlijke digitale marketingresultaten te leveren voor merken van elke omvang.
+  </p>
 
-<section class="services-section">
-  <!-- Header with gradient and fadeIn animations -->
-  <div class="section-header services-header">
-    <p class="section-subtitle">Our Expertise</p>
-    <h2 class="section-title">How Can We Help Your Business?</h2>
-    <p class="section-description">We combine creativity and strategy to deliver exceptional digital marketing results for brands of all sizes.</p>
-  </div>
-
-  <!-- Service Cards (like carousel but static) -->
   <div class="services-grid">
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-chess-queen"></i></div>
-      <h3>Marketing Strategy</h3>
-      <p>Tailored marketing roadmaps to grow your brand with data-driven approaches and measurable results.</p>
+    <div class="service-item scroll-animate" style="--delay: 0s">
+      <div class="service-icon">
+        <i class="fas fa-chess-knight"></i>
+      </div>
+      <h3>Marketingstrategie</h3>
+      <p>Op maat gemaakte marketingplannen om uw merk te laten groeien met data-gedreven aanpak en meetbare resultaten.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
-      <h3>Content Creation</h3>
-      <p>Unique content that speaks your brand's voice and resonates with your target audience.</p>
+    
+    <div class="service-item scroll-animate" style="--delay: 0.1s">
+      <div class="service-icon">
+        <i class="fas fa-pen-fancy"></i>
+      </div>
+      <h3>Contentcreatie</h3>
+      <p>Unieke content die de stem van uw merk weergeeft en aansluit bij uw doelgroep.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-thumbs-up"></i></div>
-      <h3>Social Media Management</h3>
-      <p>We manage, grow and engage your audience across all major social platforms.</p>
+    
+    <div class="service-item scroll-animate" style="--delay: 0.2s">
+      <div class="service-icon">
+        <i class="fas fa-hashtag"></i>
+      </div>
+      <h3>Social media beheer</h3>
+      <p>Wij beheren, groeien en betrekken uw doelgroep op alle grote sociale platforms.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-bullseye"></i></div>
-      <h3>Paid Ads</h3>
-      <p>Reach the right audience with precisely targeted campaigns that maximize your budget.</p>
+    
+    <div class="service-item scroll-animate" style="--delay: 0.3s">
+      <div class="service-icon">
+        <i class="fas fa-ad"></i>
+      </div>
+      <h3>Betaalde advertenties</h3>
+      <p>Bereik het juiste publiek met nauwkeurig gerichte campagnes die uw budget maximaliseren.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-video"></i></div>
-      <h3>Video Production</h3>
-      <p>Personalized videos for storytelling and promotion that captivate your audience.</p>
+    
+    <div class="service-item scroll-animate" style="--delay: 0.4s">
+      <div class="service-icon">
+        <i class="fas fa-video"></i>
+      </div>
+      <h3>Videoproductie</h3>
+      <p>Persoonlijke video's voor storytelling en promotie die uw publiek boeien.</p>
     </div>
-    <div class="service-card">
-      <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-      <h3>Web Design</h3>
-      <p>Modern, mobile-first websites that are SEO optimized and designed for conversions.</p>
-    </div>
-  </div>
-
-  <!-- Features Checklist -->
-  <div class="features-checklist animate-on-scroll">
-    <h4>Our Standard Features</h4>
-    <ul class="features-list">
-      <li>Personalized Design</li>
-      <li>Mobile Compatibility</li>
-      <li>SEO Optimized</li>
-    </ul>
-  </div>
-
-  <!-- Contact CTA -->
-  <div class="contact-section animate-on-scroll">
-    <a href="#contact" class="contact-button">Contact Us</a>
-  </div>
-
-  <!-- Testimonials -->
-  <div class="testimonial-section animate-on-scroll">
-    <h4>What Our Clients Say</h4>
-    <div class="testimonial-videos">
-      <div class="testimonial-video"><i class="fas fa-play"></i></div>
-      <div class="testimonial-video"><i class="fas fa-play"></i></div>
-      <div class="testimonial-video"><i class="fas fa-play"></i></div>
+    
+    <div class="service-item scroll-animate" style="--delay: 0.5s">
+      <div class="service-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <h3>Webdesign</h3>
+      <p>Moderne, mobiel-eerste websites die SEO-geoptimaliseerd zijn en ontworpen voor conversies.</p>
     </div>
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const headerElements = [
-      document.querySelector('.services-header .section-subtitle'),
-      document.querySelector('.services-header .section-title'),
-      document.querySelector('.services-header .section-description')
-    ];
+<section class="testimonial-pricing-section">
+  <div class="combo-container">
+    <!-- Left Side: Video Testimonial -->
+    <div class="testimonial-side">
+      <div class="video-container">
+        <video autoplay loop muted playsinline>
+          <source src="assets/images/work/8.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="testimonial-quote">
+        "We help brands speak human, and with purpose."
+      </div>
+    </div>    
+    
+    <!-- Right Side: Pricing Tiers -->
+    <div class="pricing-side">
+      <h2 class="section-heading">
+        Persoonlijke <span class="gradient-text">Video</span>
+      </h2>
+      
+      <div class="pricing-tiers">
+        <!-- Tier 1 -->
+        <div class="pricing-box">
+          <div class="pricing-video">
+            <i class="fa-solid fa-paragraph"></i>
+          </div>
+          <h3>Aangepaste scriptwriting</h3>
+          <div class="pricing-desc">Storytelling voor uw merk</div>
+        </div>
 
-    headerElements.forEach((el, i) => {
-      setTimeout(() => {
-        el.style.animationPlayState = 'running';
-      }, 400 + i * 200);
-    });
+        <!-- Tier 2 -->
+        <div class="pricing-box">
+          <div class="pricing-video">
+            <i class="fa-solid fa-clapperboard"></i>
+          </div>
+          <h3>4K Resolutie</h3>
+          <div class="pricing-desc">Kristalheldere ultra-HD kwaliteit</div>
+        </div>
+        
+        <!-- Tier 3 -->
+        <div class="pricing-box">
+          <div class="pricing-video">
+            <i class="fa-solid fa-scissors"></i>
+          </div>
+          <h3>Professioenele editing</h3>
+          <div class="pricing-desc">Postproductie op Hollywood-niveau</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    const serviceCards = document.querySelectorAll('.service-card');
-    setTimeout(() => {
-      serviceCards.forEach((card, i) => {
-        setTimeout(() => {
-          card.style.opacity = 1;
-          card.style.transform = 'translateY(0) rotateX(0)';
-        }, i * 100);
-      });
-    }, 1000);
-
-    const scrollObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animated');
-          if (entry.target.classList.contains('testimonial-video')) {
-            entry.target.style.transform = 'scale(1)';
-          }
-        }
-      });
-    }, {
-      threshold: 0.2,
-      rootMargin: '0px 0px -100px 0px'
-    });
-
-    document.querySelectorAll('.animate-on-scroll, .testimonial-video').forEach(el => {
-      scrollObserver.observe(el);
-    });
-  });
-</script>
 <?php include 'includes/footer.php'; ?>
 <script src="assets/js/script.js"></script>
